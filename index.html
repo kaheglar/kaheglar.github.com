@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Traffic Simulation</title>
+    <meta name="description" content="Traffic Simulation">
+    <meta name="author" content="Stephen Smyth">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/augment.js/0.4.0/augment.min.js"></script>
+    <script src="lib/pubsub.js"></script>
+    <script src="lib/clock.js"></script>
+    <script src="lib/traffic_light.js"></script>
+    <script src="lib/car.js"></script>
+    <script src="lib/simulation.js"></script>
+    <script src="lib/main.js"></script>
+  </head>
+  <body>
+    <article class="container hero-unit">
+      <h1>Traffic Simulation</h1>
+      <br>
+      <br>
+      <br>
+      <section>
+        <div class="row">
+          <div class="span3">
+            <div class="btn-group">
+              <button type="button" class="btn btn btn-primary btn-large" onclick="simulation.start()">
+                Start
+              </button>
+              <button type="button" class="btn btn btn-danger btn-large" onclick="simulation.stop()">
+                Stop
+              </button>
+              <button type="button" class="btn btn btn-inverse btn-large" onclick="simulation.reset()">
+                Reset
+              </button>
+            </div>
+          </div>
+          <div class="span4">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Lights</th>
+                  <th>Car 1</th>
+                  <th>Car 2</th>
+                  <th>Car 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="clock">&nbsp;</td>
+                  <td id="traffic_light">&nbsp;</td>
+                  <td id="car_1">&nbsp;</td>
+                  <td id="car_2">&nbsp;</td>
+                  <td id="car_3">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer class="container">
+      <small>© Copyright by Steve</small>
+    </footer>
+  </body>
+</html>
