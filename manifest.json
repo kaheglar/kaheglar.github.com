@@ -3,6 +3,5 @@
   "short_name": "PWA-(hahaha)",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#fb8c00",
   "orientation": "portrait"
 }
