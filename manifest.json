@@ -1,0 +1,17 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "PWA-(hahaha)",
+  "short_name": "PWA-(hahaha)",
+  "scope": "/",
+  "display": "browser",
+  "start_url": "https://kaheglar.github.io/",
+  "background_color": "blue",
+  "theme_color": "red",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [],
+  "url": "https://kaheglar.github.io/",
+  "screenshots": []
+}
