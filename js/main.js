@@ -6,7 +6,7 @@ addEventListener('beforeinstallprompt', (e) => {
   // Update UI to notify the user they can add to home screen
   document.querySelector('button').style.display = 'block';
 
-  addBtn.addEventListener('click', (e) => {
+  document.querySelector('button').addEventListener('click', (e) => {
     // hide our user interface that shows our A2HS button
     document.querySelector('button').style.display = 'none';
     // Show the prompt
