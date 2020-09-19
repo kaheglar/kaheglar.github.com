@@ -11,7 +11,10 @@
   </head>
   <body>
     <header>Header</header>
-    <main>Main</main>
+    <main><button style="display: none;">Add to home screen</button></main>
     <footer>Footer</footer>
+    <script>
+      navigator.serviceWorker.register('/sw.js');
+    </script>
   </body>
 </html>
