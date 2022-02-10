@@ -7,9 +7,20 @@
     <meta name="theme-color" content="purple" />
     <link rel="manifest" href="/manifest.json" />
     <link href="css/style.css" rel="stylesheet" />
+    <script>
+      partytown = {
+        logCalls: true,
+        logGetters: true,
+        logSetters: true,
+        logStackTraces: true,
+        logScriptExecution: true,
+        logMainAccess: true,
+      };
+    </script>
+    <script src="https://partytown.builder.io/~partytown/debug/partytown.js"></script>
     <script type="module" src="js/main.js"></script>
     <!-- Google Tag Manager -->
-    <script>
+    <script type="text/partytown">
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
